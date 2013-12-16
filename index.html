@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My.List</title>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <!--[if lt IE 9]>
+  <script src="../_scripts/respond.min.js"></script>
+  <![endif]-->
+  <!-- CSS -->
+  <link href="_/css/main.css" rel="stylesheet" media="screen, projection">
+  <meta name="viewport" content="initial-scale=1.0" />
+  <link rel="stylesheet" href="_/css/base.css" type="text/css">
+</head>
+  <body>
+    <div id="contentWrapper">
+      <article id="mainContent">
+        <h1>My.List</h1>
+        <article class="post">
+          <ol id="directions">
+            <li>Enter the things you need to do</li>
+            <li>Drag and Drop tasks to prioritize</li>
+            <li>Delete tasks when they're done.</li>
+          </ol>
+        </article>
+        <div id="container">
+          <form id="todo-form">
+              <input id="todo" type="text">
+                    <input id="submit" type="submit" value="Add to List">
+          </form>
+                <ul id="show-items" class="ui-sortable"></ul>
+                <a href="javascript:void();" id="clear-all">Clear All</a>
+            </div> <!-- container -->
+      </article> <!-- mainContent -->
+    </div> <!-- contentWrapper -->
+    <script src="_/js/jquery-1.4.4.min.js"></script>
+    <script src="_/js/jquery-ui-1.8.7.custom.min.js"></script>
+    <script src="_/js/jquery.inlineedit.js"></script>
+    <script src="_/js/pubsub.js"></script>
+    <script src="_/js/getPathPlus.js"></script>
+    <script src="_/js/app.js"></script>
+  </body>
+</html>
